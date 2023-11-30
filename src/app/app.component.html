@@ -1,0 +1,19 @@
+<h1 (mouseover)="funWelcome()">Angular Demo Project</h1>
+<app-user-list></app-user-list>
+<app-student-list></app-student-list>
+<app-teacher-list></app-teacher-list>
+
+<app-login></app-login>
+
+<b>Click below given button to call a function.</b><br>
+<button (click)="alertFunction('Angular User')">Click me</button>
+
+<br><br>
+<hr>
+<h3>Events</h3>
+<label for="keyDownevent">KeyDown event: </label>
+<input type="text" name="keyDownevent" #name (keydown)="alertFunction(name.value)" placeholder="Enter Your Name" ><br><br>
+<label for="keyUpevent">KeyUp event: </label>
+<input type="text" name="keyUpevent" #name2 (keyup)="alertFunction(name2.value)" placeholder="Enter Your Name" ><br><br>
+<label for="BlurEvent">Blur event: </label>
+<input type="text" name="BlurEvent" #name3 (blur)="alertFunction(name3.value)" placeholder="Enter Your Name" ><br><br>
